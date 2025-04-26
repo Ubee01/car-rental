@@ -1300,14 +1300,16 @@ input {
 
 /* counter */
 .counter {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 100px 32px;
   color: white;
   background-color: #202020;
   display: flex;
 }
 .served-sales {
   display: flex;
+  max-width: 1075px;
+  width: 100%;
+  height: auto;
 }
 
 .served-sales h3 {
@@ -1328,9 +1330,9 @@ input {
   display: flex;
   align-items: center;
   gap: 9px;
-  max-width: 709px;
-  width: 100%;
-  padding: 31px 160px 31px;
+  /* max-width: 709px;
+  width: 100%; */
+  padding: 31px 100px 31px;
 }
 
 .vertical-line {
@@ -1338,4 +1340,132 @@ input {
   height: 130px;
 
   background-color: #f7f7f7;
+}
+@media (min-width: 701px) and (max-width: 1200px) {
+  .counter {
+    padding: 100px 32px;
+    color: white;
+    background-color: #202020;
+    display: flex;
+  }
+  .served-sales {
+    display: flex;
+    max-width: 1075px;
+    width: 100%;
+    height: auto;
+  }
+
+  .served-sales h3 {
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .served-sales p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .sales,
+  .service-years {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    /* max-width: 709px;
+    width: 100%; */
+    padding: 31px 100px 31px;
+  }
+
+  .vertical-line {
+    width: 1px;
+    height: 130px;
+
+    background-color: #f7f7f7;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+  .counter {
+    padding: 100px 32px;
+    color: white;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .served-sales {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  /* 
+  .served-sales h3 {
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .served-sales p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  } */
+  .sales,
+  .service-years {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 20px 50px 20px;
+  }
+  .vertical-line {
+    height: 1px;
+    width: 130px;
+    background-color: #f7f7f7;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .counter {
+    padding: 100px 32px;
+    color: white;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .served-sales {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .served-sales h3 {
+    font-weight: 700;
+  }
+
+  .served-sales p {
+    font-size: 14px;
+  }
+  .sales,
+  .service-years {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 20px 40px 20px;
+  }
+  .vertical-line {
+    height: 1px;
+    width: 130px;
+    background-color: #f7f7f7;
+  }
 }
