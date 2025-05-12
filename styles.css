@@ -2104,8 +2104,8 @@ footer {
   .copy-two {
     display: none;
   } */
-}
- @media (min-width: 481px) and (max-width: 700px) {
+
+@media (min-width: 481px) and (max-width: 700px) {
   footer {
     justify-content: center;
     align-items: center;
